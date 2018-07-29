@@ -1,0 +1,49 @@
+// There are four different ways to displat Data in html
+<br>
+//document.innerHtml()--funtion innerHtmlFunction displays method<br>
+
+/*
+
+*/
+
+<html>
+    <head>
+        <h1>This is Part of Javascript Basics</h1>
+                <script>
+            function innerHtmlFunction(){
+                document.getElementById('p').innerHTML="This is from innerHtml"
+            }
+            function documentWrite(){
+            document.getElementById('p1').innerHTML=5+8
+            }
+            function AlertDisplay(){
+             window.alert('Hello From Alert')
+            }
+            function consoleLog(){
+             console.log('Hello From console Log ')
+            }
+
+
+        </script>
+    </head>
+<body>
+       
+<p id="p"> Hello Wecome to Javascript Basics tutos</p>
+<button type="button" onclick="innerHtmlFunction()">innerHtml</button>
+<br>
+
+<p id="p1">Addition of 5 and 8  is :</p>
+<button type="button" onclick="documentWrite()">docWrite</button>
+<br>
+
+<p id="p2">Alert Message</p>
+<button type="button" onclick="AlertDisplay()">Alert</button>
+<br>
+
+//For debugging purposes, you can use the console.log() method to display data.
+<p id="p3">ConsoleLog</p>
+<button type="button" onclick="consoleLog()">Log</button>
+<br>
+</body>
+    
+</html>
